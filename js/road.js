@@ -34,7 +34,7 @@ class Road {
 
     draw(ctx) {
         ctx.lineWidth = 5;
-        ctx.strokeStyle = "black";
+        ctx.strokeStyle = "red";
 
         for (let i = 1; i <= this.laneCount - 1; i++) {
             const x = lerp(

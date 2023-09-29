@@ -4,7 +4,7 @@ class Car {
         this.y = y;
         this.width = width;
         this.height = height;
-        this.road = road; // Adicione a estrada como um argumento
+        this.road = road; 
 
         this.speed = 0;
         this.acceleration = 0.2;
@@ -14,8 +14,7 @@ class Car {
 
         this.controls = new Controlador();
 
-        // Rodas do carro
-        this.wheelRadius = 10; // Tamanho das rodas (ajuste conforme necessário)
+        this.wheelRadius = 10; 
     }
 
     stayOnRoad() {
@@ -74,7 +73,7 @@ class Car {
         ctx.rotate(-this.angle);
 
        
-        ctx.fillStyle = "red"; 
+        ctx.fillStyle = "black"; 
         ctx.fillRect(
             -this.width / 2,
             -this.height / 2,
@@ -82,7 +81,7 @@ class Car {
             this.height
         );
 
-        ctx.fillStyle = "white"; 
+        ctx.fillStyle = "black"; 
 
         ctx.beginPath();
         ctx.arc(-this.width / 2, this.height / 2, this.wheelRadius, 0, Math.PI * 2);
